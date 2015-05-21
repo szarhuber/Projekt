@@ -4,4 +4,40 @@
     android:layout_height="match_parent"
     android:background="#ff636566">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="326dp"
+            android:id="@+id/android:list"
+            android:background="#ff646667" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:id="@+id/button"
+            android:background="@drawable/button_border"
+
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:clickable="false"
+            android:enabled="false"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="67dp" />
+    </RelativeLayout>
+
 </LinearLayout>

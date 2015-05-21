@@ -71,12 +71,14 @@
         android:textStyle="bold"
         android:textColor="#ffffffff"
         android:clickable="true"
-        android:enabled="false"
+        android:enabled="true"
         android:layout_gravity="center_vertical"
         android:singleLine="true"
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_marginBottom="21dp"/>
 
 </RelativeLayout>

@@ -12,7 +12,5 @@ public class MapViewActivity extends Activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.map_activity);
-
-        //seas
     }
 }

@@ -38,12 +38,14 @@ public class BioSearch extends ActionBarActivity
                 {
                     Intent intent = new Intent(context, DetailClass.class);
                     intent.putExtra("4676", fillArrayList4676());
+                    intent.putExtra("plz", 4676);
                     startActivity(intent);
                 }
                 else if(Integer.parseInt(plz) == 4720)
                 {
                     Intent intent = new Intent(context, DetailClass.class);
                     intent.putExtra("4720", fillArrayList4720());
+                    intent.putExtra("plz", 4720);
                     startActivity(intent);
                 }
                 else

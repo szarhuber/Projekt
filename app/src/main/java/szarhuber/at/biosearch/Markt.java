@@ -21,10 +21,7 @@ public class Markt implements Serializable
 
     @Override
     public String toString() {
-        return "Markt{" +
-                "name='" + name + '\'' +
-                ", ort='" + ort + '\'' +
-                '}';
+        return "Markt: "+name + " " + ort;
     }
 
     public String getName() {

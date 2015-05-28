@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DetailClass"/>
+        <activity android:name=".MarktDetail"/>
+        <activity android:name=".MapViewActivity"/>
     </application>
 
 </manifest>

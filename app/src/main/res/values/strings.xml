@@ -4,5 +4,8 @@
     <string name="app_name">BioSearch</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="mname">Markt</string>
+    <string name="mOrt">Ort</string>
+    <string name="mstrasse">Straße</string>
 
 </resources>

@@ -39,4 +39,5 @@ public class DetailClass extends ListActivity
         ArrayAdapter<Markt> arrayAdapter = new ArrayAdapter<Markt>(this, android.R.layout.simple_list_item_1, markets);
         setListAdapter(arrayAdapter);
     }
+
 }

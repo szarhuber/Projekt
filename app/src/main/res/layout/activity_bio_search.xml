@@ -18,7 +18,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="HERZLICH WILLKOMMEN!"
             android:id="@+id/textView"
-            android:textSize="30sp"
+            android:textSize="35sp"
             android:textColor="#ffffffff"
             android:gravity="center" />
     </LinearLayout>
@@ -37,13 +37,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="PLZ:"
+        android:text="Postleitzahl:"
+        android:layout_marginBottom="20px"
         android:id="@+id/textView2"
         android:textColor="#ffffffff"
-        android:layout_marginTop="170dp"
         android:layout_below="@+id/linearLayout2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="111dp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -58,7 +59,7 @@
             android:id="@+id/editText"
             android:layout_weight="1"
             android:background="@drawable/edittext_border"
-            android:paddingLeft="4dp" />
+            android:paddingLeft="6dp" />
 
     </LinearLayout>
 

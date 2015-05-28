@@ -2,6 +2,7 @@ package szarhuber.at.biosearch;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -26,10 +28,16 @@ public class BioSearch extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bio_search);
+        Typeface type = Typeface.createFromAsset(getAssets(),"fonts/agency_fb.ttf");
+        TextView textView = (TextView) findViewById(R.id.textView);
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        textView.setTypeface(type);
+        textView2.setTypeface(type);
         hm4676.put("4676", fillArrayList4676());
         hm4720.put("4720", fillArrayList4720());
         eingabe = (EditText)findViewById(R.id.editText);
         Button button = (Button)findViewById(R.id.button);
+        button.setTypeface(type);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -9,15 +9,37 @@ public class Markt implements Serializable
 {
     String name, ort, straße, email;
     int plz, telNr;
+    double longi, lati;
 
-    public Markt(String name, String ort, String straße, String email, int plz, int telNr) {
+    public double getLongi() {
+        return longi;
+    }
+
+    public void setLongi(double longi) {
+        this.longi = longi;
+    }
+
+    public double getLati() {
+        return lati;
+    }
+
+    public void setLati(double lati) {
+        this.lati = lati;
+    }
+
+    public Markt(String name, String ort, String straße, String email, int plz, int telNr, double longi, double lati) {
         this.name = name;
         this.ort = ort;
         this.straße = straße;
         this.email = email;
         this.plz = plz;
         this.telNr = telNr;
+        this.longi = longi;
+        this.lati = lati;
+
     }
+
+    public Markt(){}
 
     @Override
     public String toString() {

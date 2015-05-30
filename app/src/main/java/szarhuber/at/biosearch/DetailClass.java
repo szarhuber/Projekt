@@ -27,7 +27,7 @@ public class DetailClass extends ListActivity
         setContentView(R.layout.list_activity_);
         ListView lv = getListView();
 
-        Intent intent = getIntent();
+        final Intent intent = getIntent();
         plz = intent.getIntExtra("plz", 1);
         switch (plz)
         {
@@ -45,6 +45,7 @@ public class DetailClass extends ListActivity
             public void onClick(View view) {
                 Intent intent = new Intent(context, MapViewActivity.class);
                 intent.putExtra("MarketList", markets);
+                intent.putExtra("All", 1);
                 startActivity(intent);
             }
         });
@@ -53,6 +54,7 @@ public class DetailClass extends ListActivity
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent1 = new Intent(context, MapViewActivity.class);
                 intent1.putExtra("Markt", markets.get(i));
+                intent1.putExtra("All", 2);
                 startActivity(intent1);
             }
         });

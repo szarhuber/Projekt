@@ -56,9 +56,32 @@ public class BioSearch extends ActionBarActivity
                     intent.putExtra("plz", 4720);
                     startActivity(intent);
                 }
+                else if(Integer.parseInt(plz) == 4600)
+                {
+                    Intent intent = new Intent(context, DetailClass.class);
+                    intent.putExtra("4600", fillArrayList4600());
+                    intent.putExtra("plz", 4600);
+                    startActivity(intent);
+                }
                 else
                 {
-                    Toast.makeText(context, "Falsche Eingabe für PLZ", Toast.LENGTH_LONG).show();
+                    if(Integer.parseInt(plz) < 4600 )
+                    {
+
+                        Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4600", Toast.LENGTH_LONG).show();
+                    }
+                    else if(Integer.parseInt(plz) > 4600 && Integer.parseInt(plz) < 4676)
+                    {
+                        Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4676", Toast.LENGTH_LONG).show();
+                    }
+                    else if(Integer.parseInt(plz) > 4676)
+                    {
+                        Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4720", Toast.LENGTH_LONG).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(context, "Kein Laden in diesem Ort, bzw. in der Nähe", Toast.LENGTH_LONG).show();
+                    }
                 }
 
             }
@@ -114,5 +137,19 @@ public class BioSearch extends ActionBarActivity
         al4720.add(m3);
 
         return al4720;
+    }
+
+    public ArrayList<Markt> fillArrayList4600()
+    {
+        Markt m1 = new Markt("Welser Bio Laden", "Wels", "Kaiser-Josef Platz 3", "biowels@gmx.at", 4600, 077332004);
+        Markt m2 = new Markt("Bio am Welser Ende", "Wels", "Schulstraße 3", "welserende@gmx.at", 4600, 07733234556);
+        Markt m3 = new Markt("Regionale Bauern", "Wels", "Kimplinger Straße 2", "regiobauern@gmx.at", 4600, 07733234556);
+
+        ArrayList<Markt> al4600 = new ArrayList<>();
+        al4600.add(m1);
+        al4600.add(m2);
+        al4600.add(m3);
+
+        return al4600;
     }
 }

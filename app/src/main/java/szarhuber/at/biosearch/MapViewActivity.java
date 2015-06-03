@@ -3,7 +3,9 @@ package szarhuber.at.biosearch;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import org.osmdroid.DefaultResourceProxyImpl;
@@ -25,6 +27,8 @@ public class MapViewActivity extends Activity
 {
     private int selection = 0;
     protected MapView mapView;
+    String email;
+    String phoneNumber;
     protected IMapController mapController;
     protected boolean useOnlineMap = true;
     private int zoom = 16;
@@ -46,9 +50,13 @@ public class MapViewActivity extends Activity
         {
             case 1: al = (ArrayList<Markt>)intent.getSerializableExtra("MarketList");
                     obj = new GeoPoint(al.get(1).getLongi(), al.get(1).getLati());
+                    email = al.get(1).getEmail();
+                    phoneNumber = ""+al.get(1).getTelNr();
                     break;
             case 2: markt = (Markt)intent.getSerializableExtra("Markt");
                     obj = new GeoPoint(markt.getLongi(), markt.getLati());
+                    email = markt.getEmail();
+                    phoneNumber = ""+markt.getTelNr();
                     break;
         }
         mapView = (MapView)findViewById(R.id.map);
@@ -111,5 +119,19 @@ public class MapViewActivity extends Activity
                 }, new DefaultResourceProxyImpl(this.getApplicationContext()));
         itemList.setFocusItemsOnTap(true);
         mapView.getOverlays().add(itemList);
+    }
+
+    public void emailIntent(final View wiew)
+    {
+        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", email, null));
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Interesse an Ihrem Artikel");
+        startActivity(Intent.createChooser(intent, "E-Mail senden"));
+    }
+
+    public void phoneIntent(final View view)
+    {
+        String sDataCall = "tel: " + phoneNumber;
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(sDataCall));
+        startActivity(intent);
     }
 }

@@ -32,6 +32,7 @@ public class MapViewActivity extends Activity
     Context context = this;
     int switchCase;
     Markt markt;
+    GeoPoint obj;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,11 @@ public class MapViewActivity extends Activity
         switch(switchCase)
         {
             case 1: al = (ArrayList<Markt>)intent.getSerializableExtra("MarketList");
+                    obj = new GeoPoint(al.get(1).getLongi(), al.get(1).getLati());
+                    break;
             case 2: markt = (Markt)intent.getSerializableExtra("Markt");
+                    obj = new GeoPoint(markt.getLongi(), markt.getLati());
+                    break;
         }
         mapView = (MapView)findViewById(R.id.map);
         initMap();
@@ -58,11 +63,13 @@ public class MapViewActivity extends Activity
     private void initMap()
     {
         mapController = mapView.getController();
+        mapView.postInvalidate();
         mapView.setTileSource(TileSourceFactory.MAPQUESTOSM);
         mapView.setMultiTouchControls(true);
         mapView.setBuiltInZoomControls(true);
         mapView.setUseDataConnection(useOnlineMap);
         mapController.setZoom(zoom);
+        mapView.getController().setCenter(obj);
 
         if(switchCase == 1)
         {
@@ -78,7 +85,7 @@ public class MapViewActivity extends Activity
     private void addMarkers(final Markt markt)
     {
         final OverlayItem overlayItem = new OverlayItem(markt.getName(), markt.getOrt(), new GeoPoint(markt.getLongi(), markt.getLati()));
-        overlayItem.setMarker(getResources().getDrawable(R.drawable.marker));
+        overlayItem.setMarker(getResources().getDrawable(R.drawable.markerklein));
         ItemizedOverlayWithFocus<OverlayItem> itemList = new ItemizedOverlayWithFocus<OverlayItem>(Arrays.asList(overlayItem),
                 new ItemizedIconOverlay.OnItemGestureListener<OverlayItem>() {
                     @Override

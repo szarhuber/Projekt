@@ -113,9 +113,9 @@ public class BioSearch extends ActionBarActivity
 
     public ArrayList<Markt> fillArrayList4676()
     {
-        Markt m1 = new Markt("BioWeibern", "Weibern", "Weiberner Straße 7", "bioweibern@gmx.at", 4676, 07733234556, 3.456, 2.45);
-        Markt m2 = new Markt("BioWeibern", "Weibern", "Niederndorf 7", "bioweibern@gmx.at", 4676, 07733234556, 5.76, 2.45);
-        Markt m3 = new Markt("BioWeibern", "Weibern", "Eifel 7", "bioweibern@gmx.at", 4676, 07733234556, 3.2, 4.56);
+        Markt m1 = new Markt("BioWeibern", "Weibern", "Weiberner Straße 7", "bioweibern@gmx.at", 4676, 07733234556, 48.18317, 13.69695);
+        Markt m2 = new Markt("BioWeibern", "Weibern", "Niederndorf 7", "bioweibern@gmx.at", 4676, 07733234556, 48.18411, 13.63964);
+        Markt m3 = new Markt("BioWeibern", "Weibern", "Eifel 7", "bioweibern@gmx.at", 4676, 07733234556, 48.18392, 13.70338);
 
         ArrayList<Markt> al4676 = new ArrayList<>();
         al4676.add(m1);
@@ -127,9 +127,9 @@ public class BioSearch extends ActionBarActivity
 
     public ArrayList<Markt> fillArrayList4720()
     {
-        Markt m1 = new Markt("BioNeumarkt", "Neumarkt", "Marktplatz 3", "bioneumarkt@gmx.at", 4720, 077332004, 6.32, 1.32);
-        Markt m2 = new Markt("BioGrün", "Neumarkt", "Schulstraße 3", "bioneumarkt@gmx.at", 4720, 07733234556, 1.2, 54.3);
-        Markt m3 = new Markt("BioSumereder", "Neumarkt", "Kimplinger Straße 2", "bioneumarkt@gmx.at", 4720, 07733234556, 4.6, 1.32);
+        Markt m1 = new Markt("BioNeumarkt", "Neumarkt", "Marktplatz 3", "bioneumarkt@gmx.at", 4720, 077332004, 48.27341, 13.72641);
+        Markt m2 = new Markt("BioGrün", "Neumarkt", "Schulstraße 3", "bioneumarkt@gmx.at", 4720, 07733234556, 48.27372, 13.72762);
+        Markt m3 = new Markt("BioSumereder", "Neumarkt", "Kimplinger Straße 2", "bioneumarkt@gmx.at", 4720, 07733234556, 48.27274, 13.72212);
 
         ArrayList<Markt> al4720 = new ArrayList<>();
         al4720.add(m1);
@@ -141,9 +141,9 @@ public class BioSearch extends ActionBarActivity
 
     public ArrayList<Markt> fillArrayList4600()
     {
-        Markt m1 = new Markt("Welser Bio Laden", "Wels", "Kaiser-Josef Platz 3", "biowels@gmx.at", 4600, 077332004, 23.3, 32.1);
-        Markt m2 = new Markt("Bio am Welser Ende", "Wels", "Schulstraße 3", "welserende@gmx.at", 4600, 07733234556, 65.4, 31.1);
-        Markt m3 = new Markt("Regionale Bauern", "Wels", "Kimplinger Straße 2", "regiobauern@gmx.at", 4600, 07733234556, 45.6, 32.1);
+        Markt m1 = new Markt("Welser Bio Laden", "Wels", "Kaiser-Josef Platz 3", "biowels@gmx.at", 4600, 077332004, 48.16007, 14.02529);
+        Markt m2 = new Markt("Bio am Welser Ende", "Wels", "Schulstraße 3", "welserende@gmx.at", 4600, 07733234556, 48.15562, 14.00414);
+        Markt m3 = new Markt("Regionale Bauern", "Wels", "Kimplinger Straße 2", "regiobauern@gmx.at", 4600, 07733234556, 48.16542, 14.03664);
 
         ArrayList<Markt> al4600 = new ArrayList<>();
         al4600.add(m1);

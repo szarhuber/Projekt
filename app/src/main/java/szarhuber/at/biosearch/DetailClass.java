@@ -3,6 +3,7 @@ package szarhuber.at.biosearch;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,6 +27,8 @@ public class DetailClass extends ListActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_activity_);
         ListView lv = getListView();
+        Typeface type = Typeface.createFromAsset(getAssets(),"fonts/agency_fb.ttf");
+
 
         final Intent intent = getIntent();
         plz = intent.getIntExtra("plz", 1);
@@ -40,6 +43,7 @@ public class DetailClass extends ListActivity
         displayItems();
 
         Button map = (Button)findViewById(R.id.button);
+        map.setTypeface(type);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

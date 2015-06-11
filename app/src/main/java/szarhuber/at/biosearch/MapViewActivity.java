@@ -93,7 +93,7 @@ public class MapViewActivity extends Activity
     private void addMarkers(final Markt markt)
     {
         final OverlayItem overlayItem = new OverlayItem(markt.getName(), markt.getOrt(), new GeoPoint(markt.getLongi(), markt.getLati()));
-        overlayItem.setMarker(getResources().getDrawable(R.drawable.markerklein));
+        overlayItem.setMarker(getResources().getDrawable(R.drawable.marker));
         ItemizedOverlayWithFocus<OverlayItem> itemList = new ItemizedOverlayWithFocus<OverlayItem>(Arrays.asList(overlayItem),
                 new ItemizedIconOverlay.OnItemGestureListener<OverlayItem>() {
                     @Override
@@ -107,6 +107,9 @@ public class MapViewActivity extends Activity
                         {
                             Toast.makeText(context, "Markt: " + markt.getName(), Toast.LENGTH_LONG).show();
                         }
+
+                        Intent intent = new Intent(context, MarktDetail.class);
+                        startActivity(intent);
 
                         return false;
                     }

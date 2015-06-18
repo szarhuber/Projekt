@@ -85,7 +85,7 @@ public class BioSearch extends ActionBarActivity
                     {
                         Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4701", Toast.LENGTH_LONG).show();
                     }
-                    else if(Integer.parseInt(plz) > 4701)
+                    else if(Integer.parseInt(plz) > 4701 && Integer.parseInt(plz) < 4720)
                     {
                         Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4720", Toast.LENGTH_LONG).show();
                     }

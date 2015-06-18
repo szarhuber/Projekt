@@ -49,9 +49,12 @@ public class MapViewActivity extends Activity
         switch(switchCase)
         {
             case 1: al = (ArrayList<Markt>)intent.getSerializableExtra("MarketList");
-                    obj = new GeoPoint(al.get(1).getLongi(), al.get(1).getLati());
-                    email = al.get(1).getEmail();
-                    phoneNumber = ""+al.get(1).getTelNr();
+                    for(int i = 0; i < 3; i++)
+                    {
+                        obj = new GeoPoint(al.get(i).getLongi(), al.get(i).getLati());
+                        email = al.get(i).getEmail();
+                        phoneNumber = ""+al.get(i).getTelNr();
+                    }
                     break;
             case 2: markt = (Markt)intent.getSerializableExtra("Markt");
                     obj = new GeoPoint(markt.getLongi(), markt.getLati());

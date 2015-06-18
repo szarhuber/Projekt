@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -31,14 +32,22 @@ public class MarktDetail extends ListActivity implements AdapterView.OnItemClick
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.market_list);
-        alWishlist.add(0, produkt1);
-        alWishlist.add(1, produkt2);
-        alWishlist.add(2, produkt3);
-        alWishlist.add(3, produkt4);
-        alWishlist.add(4, produkt5);
-        alWishlist.add(5, produkt6);
+        alWishlist.add(produkt1);
+        alWishlist.add(produkt2);
+        alWishlist.add(produkt3);
+        alWishlist.add(produkt4);
+        alWishlist.add(produkt5);
+        alWishlist.add(produkt6);
 
         displayItems();
+
+        ListView listView = getListView();
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                produktAuswahl.add(alWishlist.get(position));
+            }
+        });
     }
 
     public void displayItems()
@@ -47,23 +56,21 @@ public class MarktDetail extends ListActivity implements AdapterView.OnItemClick
         setListAdapter(arrayAdapter);
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id)
-    {
-        int i = 0;
-         produktAuswahl.add(i, alWishlist.get(position));
-        i++;
-    }
-
     public void onClickWunschliste(final View view)
     {
-        //TODO Intent schreiben, produktAuswahl hinzufügen und Wunschliste-Klasse erstellen
-        //TODO --> Oben genanntes ist Arbeit fürn Philipp
+        Intent wunschIntent = new Intent(this, WishList.class);
+        wunschIntent.putExtra("Wunschliste", produktAuswahl);
+        startActivity(wunschIntent);
     }
 
     public void onClickCancel(final View view)
     {
         Intent intent = new Intent(this, BioSearch.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
     }
 }

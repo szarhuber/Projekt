@@ -19,6 +19,7 @@
         <activity android:name=".DetailClass"/>
         <activity android:name=".MarktDetail"/>
         <activity android:name=".MapViewActivity"/>
+        <activity android:name=".WishList"/>
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />

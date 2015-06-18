@@ -7,5 +7,6 @@
     <string name="mname">Markt</string>
     <string name="mOrt">Ort</string>
     <string name="mstrasse">Straße</string>
+    <string name="orderSuccess">Artikel hinzugefügt</string>
 
 </resources>

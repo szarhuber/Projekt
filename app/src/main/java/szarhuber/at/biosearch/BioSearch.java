@@ -63,6 +63,13 @@ public class BioSearch extends ActionBarActivity
                     intent.putExtra("plz", 4600);
                     startActivity(intent);
                 }
+                else if(Integer.parseInt(plz) == 4701)
+                {
+                    Intent intent = new Intent(context, DetailClass.class);
+                    intent.putExtra("4701", fillArrayList4701());
+                    intent.putExtra("plz", 4701);
+                    startActivity(intent);
+                }
                 else
                 {
                     if(Integer.parseInt(plz) < 4600 )
@@ -74,7 +81,11 @@ public class BioSearch extends ActionBarActivity
                     {
                         Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4676", Toast.LENGTH_LONG).show();
                     }
-                    else if(Integer.parseInt(plz) > 4676)
+                    else if(Integer.parseInt(plz) > 4676 && Integer.parseInt(plz) < 4701)
+                    {
+                        Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4701", Toast.LENGTH_LONG).show();
+                    }
+                    else if(Integer.parseInt(plz) > 4701)
                     {
                         Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4720", Toast.LENGTH_LONG).show();
                     }
@@ -151,5 +162,19 @@ public class BioSearch extends ActionBarActivity
         al4600.add(m3);
 
         return al4600;
+    }
+
+    public ArrayList<Markt> fillArrayList4701()
+    {
+        Markt m1 = new Markt("BioSchallerbach", "Bad Schallerbach", "Stelzhamerstraße 4", "bioschallerbach@gmx.at", 4701, 07733234556, 48.22729, 13.91375);
+        Markt m2 = new Markt("Schallerbacher Köstlichkeiten", "Bad Schallerbach", "Schulstraße 6", "koestlichkeiten@gmx.at", 4701, 07733234556, 48.23377, 13.91997);
+        Markt m3 = new Markt("Regional & Gut", "Bad Schallerbach", "Gablstraße 7", "bioweibern@gmx.at", 4701, 07733234556, 48.22655, 13.92233);
+
+        ArrayList<Markt> al4701 = new ArrayList<>();
+        al4701.add(m1);
+        al4701.add(m2);
+        al4701.add(m3);
+
+        return al4701;
     }
 }

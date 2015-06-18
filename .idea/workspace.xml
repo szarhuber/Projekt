@@ -18,9 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da801148-4265-4373-928e-e4a673532873" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/BioSearch.java" afterPath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/BioSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/DetailClass.java" afterPath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/DetailClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/MapViewActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/MapViewActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/market_list.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/market_list.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Projekt.iws" />
@@ -111,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="market_list.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="market_list.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/market_list.xml">
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="918">
+            <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="986">
               <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding />
             </state>
@@ -124,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapViewActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MapViewActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/MapViewActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6648648" vertical-offset="357" max-vertical-offset="2193">
-              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
+              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
               <folding>
                 <element signature="e#2187#2188#0" expanded="true" />
                 <element signature="e#2218#2219#0" expanded="true" />
@@ -1115,12 +1113,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_activity_.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/map_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/Produkt.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/market_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/MarktDetail.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/DetailClass.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/MapViewActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/BioSearch.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/market_list.xml" />
       </list>
     </option>
   </component>
@@ -1427,6 +1425,7 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_4_API_19" />
     <property name="FullScreen" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -1559,7 +1558,7 @@
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -1629,7 +1628,11 @@
       <created>1434615955673</created>
       <updated>1434615955673</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changes in the MapViewActivity.class.">
+      <created>1434620688481</created>
+      <updated>1434620688496</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1742,7 +1745,8 @@
     <MESSAGE value="Added e-mail and phone intent in MapViewActivity." />
     <MESSAGE value="Added Produkt.class, changed something in the Manifest. &#10;Added the market_list.xml.&#10;Changed the MarktDetail.class." />
     <MESSAGE value="Added three new stores located in Bad Schallerbach(4701)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added three new stores located in Bad Schallerbach(4701)" />
+    <MESSAGE value="Changes in the MapViewActivity.class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in the MapViewActivity.class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2133,17 +2137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/market_list.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/MarktDetail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="1105">
@@ -2187,13 +2180,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/MapViewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6648648" vertical-offset="357" max-vertical-offset="2193">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
+          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
           <folding>
             <element signature="e#2187#2188#0" expanded="true" />
             <element signature="e#2218#2219#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/market_list.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

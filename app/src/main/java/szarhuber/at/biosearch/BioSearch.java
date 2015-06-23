@@ -70,6 +70,13 @@ public class BioSearch extends ActionBarActivity
                     intent.putExtra("plz", 4701);
                     startActivity(intent);
                 }
+                else if(Integer.parseInt(plz) == 4675)
+                {
+                    Intent intent = new Intent(context, DetailClass.class);
+                    intent.putExtra("4675", fillArrayList4675());
+                    intent.putExtra("plz", 4675);
+                    startActivity(intent);
+                }
                 else
                 {
                     if(Integer.parseInt(plz) < 4600 )
@@ -79,7 +86,7 @@ public class BioSearch extends ActionBarActivity
                     }
                     else if(Integer.parseInt(plz) > 4600 && Integer.parseInt(plz) < 4676)
                     {
-                        Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4676", Toast.LENGTH_LONG).show();
+                        Toast.makeText(context, "Falsche Eingabe für PLZ." + "-> Nächster Laden in 4675", Toast.LENGTH_LONG).show();
                     }
                     else if(Integer.parseInt(plz) > 4676 && Integer.parseInt(plz) < 4701)
                     {
@@ -122,11 +129,25 @@ public class BioSearch extends ActionBarActivity
         return super.onOptionsItemSelected(item);
     }
 
+    public ArrayList<Markt> fillArrayList4675()
+    {
+        Markt m1 = new Markt("BioWeibern", "Bio-Shop", "Weiberner Straße 7", "bioweibern@gmx.at", 4675, 07733234556, 48.18317, 13.69695);
+        Markt m2 = new Markt("BioWeibern", "Bio - Farm - Oberbauer", "Niederndorf 7", "bioweibern@gmx.at", 4675, 07733234556, 48.18411, 13.63964);
+        Markt m3 = new Markt("BioWeibern", "Bio - Roitinger", "Eifel 7", "bioweibern@gmx.at", 4675, 07733234556, 48.18392, 13.70338);
+
+        ArrayList<Markt> al4675 = new ArrayList<>();
+        al4675.add(m1);
+        al4675.add(m2);
+        al4675.add(m3);
+
+        return al4675;
+    }
+
     public ArrayList<Markt> fillArrayList4676()
     {
-        Markt m1 = new Markt("BioWeibern", "Weibern", "Weiberner Straße 7", "bioweibern@gmx.at", 4676, 07733234556, 48.18317, 13.69695);
-        Markt m2 = new Markt("BioWeibern", "Weibern", "Niederndorf 7", "bioweibern@gmx.at", 4676, 07733234556, 48.18411, 13.63964);
-        Markt m3 = new Markt("BioWeibern", "Weibern", "Eifel 7", "bioweibern@gmx.at", 4676, 07733234556, 48.18392, 13.70338);
+        Markt m1 = new Markt("BioAistersheim", "Biohof - Wiesinger", "Haidenheim 18", "bioaistersheim@gmx.at", 4676, 07733234556, 48.19293, 13.73193);
+        Markt m2 = new Markt("BioAistersheim", "Aistersheim", "Thalheim 4", "bioaistersheim@gmx.at", 4676, 07733234556, 48.18097, 13.75502);
+        Markt m3 = new Markt("BioAistersheim", "Bio - Shop", "Haid 10", "bioaistersheim@gmx.at", 4676, 07733234556, 48.18652, 13.75768);
 
         ArrayList<Markt> al4676 = new ArrayList<>();
         al4676.add(m1);

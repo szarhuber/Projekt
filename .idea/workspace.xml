@@ -17,14 +17,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: szarhuber.at.biosearch" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da801148-4265-4373-928e-e4a673532873" name="Default" comment="Biomärkte aus Aistersheim wurden hinzugefügt.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/BioSearch.java" afterPath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/BioSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/DetailClass.java" afterPath="$PROJECT_DIR$/app/src/main/java/szarhuber/at/biosearch/DetailClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projekt.iml" afterPath="$PROJECT_DIR$/Projekt.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_21_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_21_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_3.xml" />
+    <list default="true" id="da801148-4265-4373-928e-e4a673532873" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Projekt.iws" />
@@ -1725,7 +1718,11 @@
       <created>1434623869939</created>
       <updated>1434623869939</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Biomärkte aus Aistersheim wurden hinzugefügt.">
+      <created>1435069823631</created>
+      <updated>1435069823631</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">

@@ -82,7 +82,7 @@ public class WishList extends ListActivity {
             String artikel = p.getName();
             double preis = p.getPrice();
 
-            xmlSerializer.setOutput(new FileWriter(String.valueOf(getAssets().open("fahrzeuge.xml"))));
+            xmlSerializer.setOutput(new FileWriter(String.valueOf(getAssets().open("wuensche.xml"))));
             //start Document
             xmlSerializer.startDocument("UTF-8", false);
             //open tag <items>

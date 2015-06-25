@@ -3,10 +3,12 @@ package szarhuber.at.biosearch;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -48,6 +50,13 @@ public class MarktDetail extends ListActivity implements AdapterView.OnItemClick
                 produktAuswahl.add(alWishlist.get(position));
             }
         });
+
+        Typeface type = Typeface.createFromAsset(getAssets(),"fonts/agency_fb.ttf");
+        Button button = (Button)findViewById(R.id.button2);
+        Button button1 = (Button)findViewById(R.id.button3);
+
+        button.setTypeface(type);
+        button1.setTypeface(type);
     }
 
     public void displayItems()

@@ -35,6 +35,7 @@ public class DetailClass extends ListActivity
         switch (plz)
         {
             case 4676: markets = (ArrayList<Markt>)intent.getSerializableExtra("4676"); break;
+            case 4675: markets = (ArrayList<Markt>)intent.getSerializableExtra("4675"); break;
             case 4720: markets = (ArrayList<Markt>)intent.getSerializableExtra("4720"); break;
             case 4600: markets = (ArrayList<Markt>)intent.getSerializableExtra("4600"); break;
             case 4701: markets = (ArrayList<Markt>)intent.getSerializableExtra("4701"); break;
